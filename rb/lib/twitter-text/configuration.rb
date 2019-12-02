@@ -24,17 +24,17 @@ module Twitter
       attr_reader :emoji_parsing_enabled
 
       CONFIG_V1 = File.join(
-        File.expand_path('../../../config', __FILE__), # project root
+        File.expand_path('../../../../config', __FILE__), # project root
         "#{PARSER_VERSION_CLASSIC}.json"
       )
 
       CONFIG_V2 = File.join(
-        File.expand_path('../../../config', __FILE__), # project root
+        File.expand_path('../../../../config', __FILE__), # project root
         "#{PARSER_VERSION_WEIGHTED}.json"
       )
 
       CONFIG_V3 = File.join(
-        File.expand_path('../../../config', __FILE__), # project root
+        File.expand_path('../../../../config', __FILE__), # project root
         "#{PARSER_VERSION_EMOJI_PARSING}.json"
       )
 
