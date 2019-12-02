@@ -845,4 +845,14 @@ describe Twitter::TwitterText::Autolink do
     end
   end
 
+  describe "emoji" do
+    before do
+      @linker = TestAutolink.new
+    end
+    it "should not mess with emoji" do
+      result = @linker.auto_link("This 🤔 is some emoji: 🤔")
+      expect(result).to match(/🤔/)
+    end
+  end
+
 end
